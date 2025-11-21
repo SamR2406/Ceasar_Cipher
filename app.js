@@ -8,8 +8,7 @@ const clearBtn = document.getElementById("clear");
 const normalizeShift = (shift) => {
   const n = parseInt(shift, 10);
   if (Number.isNaN(n)) return 0;
-  return ((n % 26) + 26) % 26; // keep it in [0, 25]
-  
+  return ((n % 26) + 26) % 26; 
 };
 
 const caesar = (text, shift) => {
